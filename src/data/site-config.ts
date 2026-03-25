@@ -47,23 +47,15 @@ const siteConfig: SiteConfig = {
             text: 'Terms',
             href: '/terms'
         },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
-        }
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
-        },
-        {
             text: 'Instagram',
-            href: 'https://instagram.com/'
+            href: 'https://www.instagram.com/faye_myinsta/'
         },
         {
             text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            href: 'https://x.com/Faye_MyTwi'
         }
     ],
     hero: {
