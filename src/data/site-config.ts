@@ -6,10 +6,11 @@ const siteConfig: SiteConfig = {
     website: 'https://fayespark.com',
     avatar: {
         src: avatar,
-        alt: 'Ethan Donovan'
+        alt: 'Faye Zhang'
     },
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
+    title: 'Fayespark',
+    displayName: 'Faye',
+    subtitle: '感谢家人们参观我的个人主页～',
     description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
     image: {
         src: '/dante-preview.jpg',

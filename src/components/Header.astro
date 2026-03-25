@@ -25,10 +25,10 @@ const titleClass = 'text-theme-foreground font-serif text-2xl leading-tight font
     <div class="grow">
         {
             siteConfig.avatar?.src ? (
-                <p class={titleClass}>{siteConfig.title}</p>
+                <p class={titleClass}>{siteConfig.displayName || siteConfig.title}</p>
             ) : (
                 <a class={titleClass} href="/">
-                    {siteConfig.title}
+                    {siteConfig.displayName || siteConfig.title}
                 </a>
             )
         }
