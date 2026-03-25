@@ -1,5 +1,5 @@
 import avatar from '../assets/images/faye_portrait_transp.png';
-import hero from '../assets/images/hero.jpg';
+import hero from '../assets/images/hero_livingroom.jpg';
 import type { SiteConfig } from '../types';
 
 const siteConfig: SiteConfig = {
