@@ -59,8 +59,8 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence.\nMy approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products.\nI have a profound appreciation for top-notch software, visual design, and the principles of product-led growth.\n\nFeel free to explore some of my coding endeavors on [GitHub](https://github.com/JustGoodUI/dante-astro-theme) or follow me on [Twitter/X](https://twitter.com/justgoodui).",
+        title: 'Hi~欢迎来到 FayeSpark 数字花园🪴',
+        text: "我是张雨菲Faye，一个正在探索AI轻创业的25岁女生。  \n这里将记录我从零开始做轻创业的真实经历、投资思考、以及我在现实和游戏中的各种旅程。\n\n闲暇时，我最大的乐趣是玩《模拟人生4》的建筑模式和宅家看Youtube打Switch。  \n在生活与财务规划上，我的目标是让被动收入覆盖生活成本从而实现真正的自由躺平💪。我也会在这里分享一些相关经验和书籍。\n\n为了保持生活的松弛感，我的固定休息日是周三、周六，以及随机一个只想躺平的日子。",
         image: {
             src: hero,
             alt: 'A person sitting at a desk in front of a computer'
