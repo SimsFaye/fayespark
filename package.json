@@ -13,16 +13,18 @@
         "@astrojs/mdx": "^4.3.10",
         "@astrojs/rss": "^4.0.13",
         "@astrojs/sitemap": "^3.6.0",
-        "@fontsource-variable/inter": "^5.2.8",
-        "@fontsource-variable/newsreader": "^5.2.10",
         "@tailwindcss/vite": "^4.1.17",
         "astro": "^5.15.9",
+        "lxgw-wenkai-webfont": "^1.7.0",
         "marked": "^17.0.0",
         "sharp": "^0.34.5",
         "tailwindcss": "^4.1.17"
     },
     "pnpm": {
-        "onlyBuiltDependencies": ["sharp", "esbuild"]
+        "onlyBuiltDependencies": [
+            "sharp",
+            "esbuild"
+        ]
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.19",
