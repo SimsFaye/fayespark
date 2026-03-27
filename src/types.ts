@@ -45,4 +45,5 @@ export type SiteConfig = {
     subscribe?: Subscribe;
     postsPerPage?: number;
     projectsPerPage?: number;
+    galleryPerPage?: number;
 };

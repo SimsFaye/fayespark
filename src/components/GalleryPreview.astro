@@ -1,0 +1,25 @@
+---
+import { type CollectionEntry } from 'astro:content';
+import CustomImage from './CustomImage.astro';
+
+type Props = { item: CollectionEntry<'gallery'>; class?: string };
+
+const { item, class: className } = Astro.props;
+const { title, image } = item.data;
+---
+
+<a class:list={['group block overflow-hidden rounded-lg', className]} href={`/gallery/${item.id}/`}>
+    <figure class="relative aspect-square overflow-hidden">
+        <CustomImage
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+            src={image.src}
+            alt={image.alt || title}
+            widths={[320, 480, 640]}
+            sizes="(min-width: 832px) 33vw, (min-width: 640px) 50vw, 100vw"
+        />
+        <div class="absolute inset-0 bg-black/0 transition duration-300 group-hover:bg-black/30"></div>
+        <div class="absolute inset-x-0 bottom-0 translate-y-full p-3 text-white transition duration-300 group-hover:translate-y-0">
+            <p class="text-sm font-medium">{title}</p>
+        </div>
+    </figure>
+</a>

@@ -1,0 +1,61 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import CustomImage from '../../components/CustomImage.astro';
+import GalleryPreview from '../../components/GalleryPreview.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { sortItemsByDateDesc } from '../../utils/data-utils';
+
+export async function getStaticPaths() {
+    const items = (await getCollection('gallery')).sort(sortItemsByDateDesc);
+    const itemCount = items.length;
+    return items.map((item, index) => ({
+        params: { id: item.id },
+        props: {
+            item,
+            prevItem: index + 1 !== itemCount ? items[index + 1] : null,
+            nextItem: index !== 0 ? items[index - 1] : null
+        }
+    }));
+}
+
+type Props = {
+    item: CollectionEntry<'gallery'>;
+    prevItem: CollectionEntry<'gallery'>;
+    nextItem: CollectionEntry<'gallery'>;
+};
+
+const { item, prevItem, nextItem } = Astro.props;
+const { title, description, image, seo } = item.data;
+const { Content } = await render(item);
+---
+
+<BaseLayout title={seo?.title ?? title} description={seo?.description ?? description} image={seo?.image} pageType="article" showHeader={false}>
+    <article class="mb-16 sm:mb-24">
+        <header class="mb-8">
+            <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">{title}</h1>
+        </header>
+        <figure class="mb-8">
+            <CustomImage
+                class="w-full"
+                src={image.src}
+                alt={image.alt || title}
+                widths={[640, 1024, 1536]}
+                sizes="(min-width: 832px) 768px, calc(100vw - 32px)"
+            />
+        </figure>
+        <div class="prose sm:prose-lg max-w-none">
+            <Content />
+        </div>
+    </article>
+    {
+        (prevItem || nextItem) && (
+            <div class="my-16 sm:my-24">
+                <h2 class="mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">More</h2>
+                <div class="grid grid-cols-2 gap-4 sm:gap-6">
+                    {nextItem && <GalleryPreview item={nextItem} />}
+                    {prevItem && <GalleryPreview item={prevItem} />}
+                </div>
+            </div>
+        )
+    }
+</BaseLayout>

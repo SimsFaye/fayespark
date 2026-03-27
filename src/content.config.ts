@@ -16,7 +16,7 @@ const seoSchema = (image: ImageFunction) =>
     });
 
 const blog = defineCollection({
-    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/life' }),
     schema: ({ image }) =>
         z.object({
             title: z.string(),
@@ -38,8 +38,8 @@ const pages = defineCollection({
         })
 });
 
-const projects = defineCollection({
-    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
+const build = defineCollection({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/build' }),
     schema: ({ image }) =>
         z.object({
             title: z.string(),
@@ -50,4 +50,17 @@ const projects = defineCollection({
         })
 });
 
-export const collections = { blog, pages, projects };
+const gallery = defineCollection({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/gallery' }),
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            description: z.string().optional(),
+            publishDate: z.coerce.date(),
+            image: imageSchema(image),
+            tags: z.array(z.string()).default([]),
+            seo: seoSchema(image).optional()
+        })
+});
+
+export const collections = { blog, pages, build, gallery };

@@ -1,14 +1,13 @@
 export function slugify(input?: string) {
     if (!input) return '';
 
-    // make lower case and trim
     var slug = input.toLowerCase().trim();
 
-    // remove accents from charaters
+    // remove accents from characters
     slug = slug.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
-    // replace invalid chars with spaces
-    slug = slug.replace(/[^a-z0-9\s-]/g, ' ').trim();
+    // keep alphanumeric, CJK characters, spaces and hyphens
+    slug = slug.replace(/[^a-z0-9\u4e00-\u9fff\u3040-\u309f\u30a0-\u30ff\s-]/g, ' ').trim();
 
     // replace multiple spaces or hyphens with a single hyphen
     slug = slug.replace(/[\s-]+/g, '-');

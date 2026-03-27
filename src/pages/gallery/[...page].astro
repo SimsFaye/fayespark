@@ -1,0 +1,27 @@
+---
+import type { GetStaticPathsOptions, Page } from 'astro';
+import { type CollectionEntry, getCollection } from 'astro:content';
+import Pagination from '../../components/Pagination.astro';
+import GalleryPreview from '../../components/GalleryPreview.astro';
+import siteConfig from '../../data/site-config';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { sortItemsByDateDesc } from '../../utils/data-utils';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+    const items = (await getCollection('gallery')).sort(sortItemsByDateDesc);
+    return paginate(items, { pageSize: siteConfig.galleryPerPage || 12 });
+}
+
+type Props = { page: Page<CollectionEntry<'gallery'>> };
+
+const { page } = Astro.props;
+const items = page.data;
+---
+
+<BaseLayout title="Gallery" description="摄影作品、游戏截图、旅行影像" showHeader={false}>
+    <h1 class="mb-12 font-serif text-2xl leading-tight italic sm:mb-16 sm:text-4xl">Gallery</h1>
+    <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6">
+        {items.map((item) => <GalleryPreview item={item} />)}
+    </div>
+    <Pagination page={page} class="my-16 sm:my-24" />
+</BaseLayout>
