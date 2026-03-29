@@ -7,11 +7,11 @@ tags:
   - 生活随笔
 seo:
   image:
-    src: '../../assets/images/post-1.jpg'
+    src: '../../assets/images/hello.jpg'
     alt: Hello World
 ---
 
-![Hello World](../../assets/images/post-1.jpg)
+![Hello World](../../assets/images/hello.jpg)
 
 欢迎来到我的数字花园！
 

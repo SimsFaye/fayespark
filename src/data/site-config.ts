@@ -47,10 +47,7 @@ const siteConfig: SiteConfig = {
             text: 'Contact',
             href: '/contact'
         },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
+
     ],
     socialLinks: [
         {
@@ -71,15 +68,15 @@ const siteConfig: SiteConfig = {
         },
         actions: [
             {
-                text: 'Get in Touch',
+                text: 'Contact',
                 href: '/contact'
             }
         ]
     },
     subscribe: {
         enabled: true,
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
+        title: '订阅 FayeSpark 更新',
+        text: '每周一封邮件，获取最新的创业记录、生活分享和摄影作品，直达你的收件箱。',
         form: {
             action: '#'
         }

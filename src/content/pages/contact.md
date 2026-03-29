@@ -1,14 +1,14 @@
 ---
-title: Get in touch
+title: 联系我
 seo:
-  title: Contact
-  description: Get in touch through email or social media! Let me know how I can help.
+  title: 联系我 - Faye
+  description: 通过邮箱或社交媒体与 Faye 取得联系。
 ---
 
-Thank you for reaching out! Whether you have a question, a suggestion, or just want to share your thoughts, I'm all ears. Feel free to get in touch through any of the methods below:
+感谢你的关注！无论是想聊聊合作、分享想法，还是只是打个招呼，都欢迎随时联系我。
 
-_Email:_
-Feel free to drop me an email at [example@example.com](mailto:example@example.com), and I'll do my best to respond as soon as possible.
+_邮箱：_
+[faye@fayespark.com](mailto:faye@fayespark.com)
 
-_Social Media:_
-Connect with me on social media as well. Find me on [Twitter](https://twitter.com) or [LinkedIn](https://www.linkedin.com/).
+_社交媒体：_
+你也可以在 [Instagram](https://www.instagram.com/faye_myinsta/)、[X/Twitter](https://x.com/Faye_MyTwi) 或 [小红书](https://xhslink.com/m/1ziNIuiW2H6) 上找到我。

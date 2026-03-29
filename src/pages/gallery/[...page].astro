@@ -3,6 +3,7 @@ import type { GetStaticPathsOptions, Page } from 'astro';
 import { type CollectionEntry, getCollection } from 'astro:content';
 import Pagination from '../../components/Pagination.astro';
 import GalleryPreview from '../../components/GalleryPreview.astro';
+import Subscribe from '../../components/Subscribe.astro';
 import siteConfig from '../../data/site-config';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { sortItemsByDateDesc } from '../../utils/data-utils';
@@ -24,4 +25,5 @@ const items = page.data;
         {items.map((item) => <GalleryPreview item={item} />)}
     </div>
     <Pagination page={page} class="my-16 sm:my-24" />
+    <Subscribe class="my-16 sm:my-24" />
 </BaseLayout>

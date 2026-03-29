@@ -1,43 +1,33 @@
 ---
-title: About
+title: 关于我
 seo:
-  title: About Me
-  description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
+  title: 关于我 - Faye
+  description: 了解 Faye —— 一个正在探索 AI 轻创业的数字游民。
   image:
-    src: '../../assets/images/about.jpg'
-    alt: A person sitting at a desk in front of a computer
+    src: '../../assets/images/sakura.jpg'
+    alt: Faye
 ---
 
-![Alt text for image](../../assets/images/about.jpg)
+![关于我](../../assets/images/sakura.jpg)
 
-**Note!:** This about page is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+## Hi，我是 Faye
 
-## Ethan Donovan - Web Developer based in Estonia
+一个正在做 AI 轻创业的数字游民，目前暂住在东京，未来三个月内计划去广东旅居。
 
-**Greetings!** I'm Ethan Donovan, a passionate web developer residing in the picturesque landscapes of [Estonia](https://en.wikipedia.org/wiki/Estonia). With a keen eye for design and a love for crafting seamless digital experiences, I bring a unique blend of creativity and technical expertise to the world of web development.
+我喜欢在不同的城市生活和创造，用自己的节奏探索世界。
 
-## Skills and Expertise
+## 我在做什么
 
-I specialize in front-end and back-end development, utilizing the latest technologies to build responsive and user-friendly websites. My proficiency includes **HTML**, **CSS**, **JavaScript**, and frameworks such as **Astro.js** for dynamic and interactive user interfaces. On the server side, I'm well-versed in Node.js and have experience with database management systems like MongoDB.
+目前正在探索 AI 与轻创业的结合，希望通过数字产品和内容创作，逐步实现被动收入覆盖生活成本的目标。这个网站就是我记录这段旅程的地方 —— 从零开始的真实经历、投资思考，以及生活中的点滴。
 
-## Innovation and Problem-Solving
+## 兴趣爱好
 
-I thrive on solving complex problems and transforming ideas into functional, elegant websites. Whether it's optimizing performance, implementing new features, or troubleshooting issues, I approach each challenge with enthusiasm and a commitment to delivering high-quality solutions.
+宅家的时候，我喜欢打游戏（Switch / 模拟人生4）、刷 YouTube、研究建筑风格和种菜养花。户外的话，我很喜欢单板滑雪和胶片摄影。最近还对夏威夷的 Hula 舞感兴趣。
 
-## Global Perspective, Local Impact
+## 联系我
 
-Living in Estonia has not only influenced my appreciation for nature and culture but has also shaped my approach to web development. I understand the importance of creating digital solutions that resonate with local audiences while maintaining a global perspective.
+如果你想聊聊 AI 创业、数字游民生活，或者只是打个招呼，欢迎通过邮件联系我：[faye@fayespark.com](mailto:faye@fayespark.com)
 
-## Continuous Learning
+你也可以在 [Instagram](https://www.instagram.com/faye_myinsta/)、[X/Twitter](https://x.com/Faye_MyTwi) 或 [小红书](https://xhslink.com/m/1ziNIuiW2H6) 上找到我。
 
-The dynamic nature of the tech industry inspires me to stay up-to-date with the latest trends and advancements. I'm always eager to expand my skill set and embrace emerging technologies that enhance the functionality and aesthetics of the websites I create.
-
-## Collaboration and Communication
-
-I believe in the power of collaboration and effective communication. Whether working with clients, designers, or fellow developers, I value clear communication to ensure the success of every project.
-
-## Get in Touch
-
-Are you looking to elevate your online presence or bring your digital ideas to life? I'd love to hear from you! Feel free to reach out for collaboration, consultation, or just a friendly chat about all things web development.
-
-_Let's build something amazing together!_
+_期待你的来信！_
